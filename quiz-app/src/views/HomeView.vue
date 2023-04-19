@@ -1,6 +1,10 @@
 <template>
   <div class="home">
+    <a href="https://utile.dk">
+      <img class="utile-logo" alt="Vue logo" src="../assets/logo_utile.png">
+    </a>
     <img class="vue-logo" alt="Vue logo" src="../assets/logo.png">
+    
     <QuizContent :showScore="showScore" />
     <div>
       <input class="submit-btn" type="submit" value="Check score" @click="showScore = true" >
@@ -29,6 +33,10 @@ export default class HomeView extends Vue {
 <style>
 .vue-logo {
   height: 100px;
+}
+
+.utile-logo {
+  height: 80px;
 }
 
 .home {
